@@ -1,0 +1,38 @@
+{
+  "dataStudio": {
+    "name": "ForceDirectedGraph",
+    "logoUrl": "https://example.com/logo.png",
+    "company": "Your Company Name",
+    "description": "A custom force-directed network graph visualization that displays relationships between pipeline-job groups and hostnames. The edge weight represents query count.",
+    "version": "1.0"
+  },
+  "style": {
+    "defaults": {
+      "backgroundColor": "#FFFFFF",
+      "fontFamily": "Arial",
+      "fontSize": 12,
+      "color": "#333333"
+    }
+  },
+  "data": {
+    "dimensions": [
+      {
+        "name": "source",
+        "label": "Pipeline-Job (Source)",
+        "dataType": "TEXT"
+      },
+      {
+        "name": "target",
+        "label": "Hostname (Target)",
+        "dataType": "TEXT"
+      }
+    ],
+    "metrics": [
+      {
+        "name": "weight",
+        "label": "Query Count",
+        "dataType": "NUMBER"
+      }
+    ]
+  }
+}
